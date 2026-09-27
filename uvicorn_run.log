@@ -1,0 +1,62 @@
+INFO:     Started server process [30200]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51457 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51458 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51459 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50680 - "GET / HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:50683 - "POST /api/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63577 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50599 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52102 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:58797 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:63702 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:57496 - "POST /api/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59911 - "POST /api/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59914 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:59920 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:59922 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:59923 - "POST /api/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53044 - "POST /api/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53045 - "POST /api/generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:53047 - "POST /api/generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:53498 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:53500 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:53502 - "POST /api/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53503 - "POST /api/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53507 - "POST /api/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53508 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:53509 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:53510 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:64733 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:59894 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:57622 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:61171 - "POST /api/generate HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:58247 - "POST /api/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50666 - "GET / HTTP/1.1" 200 OK
+Question generation failed: Groq call failed (model=openai/gpt-oss-120b): Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+INFO:     127.0.0.1:53265 - "POST /api/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55093 - "POST /api/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52350 - "POST /api/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54266 - "POST /api/score HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54267 - "POST /api/case-studies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58671 - "POST /api/evidence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61762 - "POST /api/devplan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51089 - "POST /api/devplan HTTP/1.1" 200 OK
