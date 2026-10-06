@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Validation Queue{% endblock %}
+{% block breadcrumb %}Manager / Validation Queue{% endblock %}
+{% block content %}
+<div class="page-heading"><div><p class="eyebrow">MANAGER GATE</p><h1>Validation queue</h1><p>Open an entry to review the MCQ score, simulation evidence and per-skill outcome, then decide: approve and certify the tested levels (skill-up training follows), reject and assign skill-gap training, or send back for a retake.</p></div></div>
+{% if notice %}<div class="flash ok" role="status">{{ notice }}</div>{% endif %}
+<div class="notice-card"><b>Decision boundary:</b> Agents never decide for the candidate. The score, evidence and recommendation are proposals; you make the call.</div>
+
+<div class="card table-card">
+<div class="table-wrap">
+<table>
+<thead><tr><th>Employee</th><th>Matched role</th><th>MCQ score</th><th>Evidence score</th><th>AI-use check</th><th>Recommendation</th><th>Status</th><th></th></tr></thead>
+<tbody>
+{% for cycle in cycles %}
+{% set score = cycle.mcq_score %}
+{% set evidence = cycle.evidence_report %}
+{% set o = outcomes[cycle.cycle_id] %}
+<tr>
+  <td><b>{{ cycle.employee_name }}</b></td>
+  <td>{{ cycle.matched_role_name }}</td>
+  <td>{{ score.overall_score_pct if score else '—' }}%</td>
+  <td>{{ evidence.evidence_score_pct if evidence else '—' }}%</td>
+  <td>{% if evidence and evidence.integrity_risk in ('medium', 'high') %}<span class="badge {{ 'danger' if evidence.integrity_risk == 'high' else 'warning' }}">⚠ {{ evidence.integrity_risk|title }}</span>{% elif evidence and evidence.integrity_risk %}<span class="badge success">✓ Low</span>{% else %}—{% endif %}</td>
+  <td><span class="badge {{ 'success' if o.band == 'strong' else 'danger' }}">{{ 'Approve & certify' if o.recommendation == 'approved' else 'Reject · gap training' }}</span><small>{{ o.demonstrated }} of {{ o.total }} skills shown</small></td>
+  <td><span class="badge warning">{{ 'Re-review requested by leader' if cycle.manager_decision else 'Pending manager approval' }}</span></td>
+  <td><a class="text-link" href="/manager/validations/{{ cycle.cycle_id }}">View →</a></td>
+</tr>
+{% else %}
+<tr><td colspan="8"><div class="empty-state"><h2>Queue is clear</h2><p>No cycles are awaiting manager review.</p></div></td></tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+</div>
+{% endblock %}
